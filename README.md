@@ -1,1 +1,1 @@
-# DWAI_2024
+# Repositório da Disciplina de Design Web e Arquitetura da Informação
