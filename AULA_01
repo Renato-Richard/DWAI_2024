@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!--DOCTYPE define a versão do HTML, estamos usando a versão 5-->
+<html>
+    <head>
+        <title>Design Web e Arquitetura da Informação</title>
+        <meta charset="utf-8"/>
+    </head>
+<!--HEAD define o cabeçalho-->
+    <body>
+<!--IDENTAÇÃO - significa ORGANIZAÇÃO HIERÁRQUICA DO CÓDIGO!-->
+<!--SINTAXE, SEMÂNTICA E BOAS PRÁTICAS DE DESENVOLVIMENTO!-->
+        <h1>INFOWEB</h1>
+        <p>Curso Técnico de Informática para Internet</p>
+        <h2>Disciplinas</h2>
+        <p>No curso tem mais de 548787 disciplinas</p>
+        <h2>Professores</h2>
+        <p>Danielle, Gilbert, Alexandre, Jessé, João Maria...</p>
+<!--P define o parágrafo-->
+    </body>
+</html>
