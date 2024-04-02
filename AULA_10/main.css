@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    text-align: center;
+    text-decoration: none;
+}
+header a{ /*serão selecionados todos os âncoras da tag header*/
+    color: white;
+    text-decoration: none;
+}
+header h1{
+    background-color: #1e6c7d;
+    padding: 3em;
+}
+nav{
+    background-color: #125260;
+    padding: 1em;
+}
+nav li{
+    display: inline-block; /*muda a essência da marcação, o padrão é block*/
+    margin-right: 1em;
+}
+section{
+    background-color: #c47969;
+    width: 15em;
+    height: 12em;
+    border-radius: 1em;
+    margin: 1em;
+    padding: 2em;
+    float: left;
+}
+footer{
+    background-color: #8db19d;
+    padding: 1.5em;
+    clear: both; /*o clear limpa a página com relação aos elementos que estão flutuando*/
+}
