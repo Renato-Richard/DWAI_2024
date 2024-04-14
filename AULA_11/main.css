@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+header{
+    text-align: center;
+    text-decoration: none;
+}
+header a{ /*serão selecionados todos os âncoras da tag header*/
+    color: white;
+    text-decoration: none;
+}
+header h1{
+    background-color: #1e6c7d;
+    padding: 2em;
+}
+header nav{
+    background-color: #125260;
+    padding: 1em;
+}
+header nav li{
+    display: inline-block; /*muda a essência da marcação, o padrão é block*/
+    margin-right: 1em;
+}
+main{
+    max-width: 70em; /*Largura máxima para o conteúdo principal*/
+    margin: 0 auto; /*coloca o elemento bloco no centro quando definido a largura*/
+    display: flex; /*colocar todas sections uma do lado da outra*/
+    flex-wrap: wrap; /*quebrar as linhas das sections*/
+}
+section{
+    background-color: #c47969;
+    width: 29em;
+    height: 12em;
+    border-radius: 1em;
+    margin: 1em;
+    padding: 2em;
+}
+footer{
+    background-color: #8db19d;
+    padding: 1.5em;
+}
+article{
+    background-color: #c47969;
+    width: 50em;
+    border-radius: 1em;
+    margin: 1em;
+    padding: 2em;
+}
+aside{
+    background-color: rgb(221, 221, 221);
+    max-width: 8em;
+    border-radius: 1em;
+    margin: 1em;
+    padding: 2em;
+}
+figure{
+    float: left;
+}
+article figure img{
+    border-radius: 0 5em 5em 0;
+    width: 8em;
+    
+}

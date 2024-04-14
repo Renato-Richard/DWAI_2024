@@ -1,0 +1,11 @@
+body {
+    background-image: url(bg.svg);
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-position: right, left;
+  }
+  
+  img {
+    filter: grayscale(50%);
+  }

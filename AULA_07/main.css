@@ -1,0 +1,13 @@
+body{
+    background-color:black;
+    color: gold;
+    text-align: center;
+}
+h1{
+    color: gold;
+}
+a{
+   display: inline-block;
+   text-decoration: none;
+   color: gold;
+}
