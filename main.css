@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #eee;
+    font-family: sans-serif;
+}
+header{
+    background-image: linear-gradient(to right, #72CFED, #186C86);
+}
+h1{
+    padding: 0.5em 0.5em 0.5em 2em;
+}
+main{
+    max-width: 70em;
+    margin: 4em auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+}
+section{
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 0.75em;
+}
+.data{
+    text-align: right;
+    color: #aaa;
+}
+h2{
+    color: #186C86;
+    font-weight: lighter;
+}
+div{
+    padding: 0.75em 0;
+}
+.texto{
+    padding: 0 0 4em 0;
+    margin: 0 4em 0 0;
+}
