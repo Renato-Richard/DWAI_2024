@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>align-items</title>
+    <style>
+        .container{
+            background-color: olive;
+            width: 70em;
+            margin: 2em auto;
+            padding: 2em;
+            display: flex;
+            height: 40em;
+        }
+        .flex-start{
+            align-items: flex-start;
+        }
+        .flex-end{
+            align-items: flex-end;
+        }
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .container > div{
+            border: 1px solid white; padding: 2em; margin: 2em; width: 10em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container flex-start">
+        <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate eaque est perspiciatis ab molestias omnis eveniet mollitia, iusto nulla et adipisci voluptate architecto esse molestiae labore officia repudiandae dignissimos consectetur!</p></div>
+        <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias optio nemo sed neque saepe cupiditate minus. Dolores enim minima similique magnam quasi natus</p></div>
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nemo, quam rem officia nulla laudantium illum tenetur corporis aspernatur necessitatibus. Quia eligendi quidem qui, vitae iure rerum voluptatum impedit nulla!</p></div>
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nemo, quam rem officia nulla laudantium illum tenetur corporis aspernatur necessitatibus.</p></div>
+    </div>
+    <div class="container flex-end">
+        <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate eaque est perspiciatis ab molestias omnis eveniet mollitia, iusto nulla et adipisci voluptate architecto esse molestiae labore officia repudiandae dignissimos consectetur!</p></div>
+        <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias optio nemo sed neque saepe cupiditate minus. Dolores enim minima similique magnam quasi natus</p></div>
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nemo, quam rem officia nulla laudantium illum tenetur corporis aspernatur necessitatibus. Quia eligendi quidem qui, vitae iure rerum voluptatum impedit nulla!</p></div>
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nemo, quam rem officia nulla laudantium illum tenetur corporis aspernatur necessitatibus.</p></div>
+    </div>
+    <div class="container center">
+        <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate eaque est perspiciatis ab molestias omnis eveniet mollitia, iusto nulla et adipisci voluptate architecto esse molestiae labore officia repudiandae dignissimos consectetur!</p></div>
+        <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias optio nemo sed neque saepe cupiditate minus. Dolores enim minima similique magnam quasi natus</p></div>
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nemo, quam rem officia nulla laudantium illum tenetur corporis aspernatur necessitatibus. Quia eligendi quidem qui, vitae iure rerum voluptatum impedit nulla!</p></div>
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nemo, quam rem officia nulla laudantium illum tenetur corporis aspernatur necessitatibus.</p></div>
+    </div>
+    <div class="container stretch">
+        <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate eaque est perspiciatis ab molestias omnis eveniet mollitia, iusto nulla et adipisci voluptate architecto esse molestiae labore officia repudiandae dignissimos consectetur!</p></div>
+        <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias optio nemo sed neque saepe cupiditate minus. Dolores enim minima similique magnam quasi natus</p></div>
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nemo, quam rem officia nulla laudantium illum tenetur corporis aspernatur necessitatibus. Quia eligendi quidem qui, vitae iure rerum voluptatum impedit nulla!</p></div>
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nemo, quam rem officia nulla laudantium illum tenetur corporis aspernatur necessitatibus.</p></div>
+    </div>
+</body>
+</html>

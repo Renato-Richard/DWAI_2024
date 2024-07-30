@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to left, #519999, #5BABAB, #458181);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container > div{
+    width: 20em;
+    height: 20em;
+    background-color: white;
+    border-radius: 0.5em;
+}
+li{
+    display: inline-block;
+}
