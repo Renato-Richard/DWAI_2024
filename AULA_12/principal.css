@@ -1,0 +1,22 @@
+body{
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aqua;
+
+}
+h1{
+    background-color: crimson;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+li{
+    list-style-image: url(favoritos.png);
+}
+ol.menuprincipal li{
+    list-style-type: none;
+    display: inline-block;
+}
+ol.menuprincipal a{
+    text-decoration: none;
+}

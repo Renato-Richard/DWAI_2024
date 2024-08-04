@@ -1,0 +1,49 @@
+div#container{ /* o símbolo de jogo da velha faz a associação com o atributo id */
+    max-width: 70em;
+    /*  */
+    margin: 0 auto;
+    background-color: #f2f2f2;
+    padding: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* section div - formata todas as div´s que estão na section */
+/* section, div -  formata para as div´s e section´s */
+/* section > div - formata apenas  a div que É FILHA DIRETA da section */
+/* section + div -  formata a div  DEPOIS da SECTION */
+
+section > div{
+    display: flex;
+    background-color: darkseagreen;
+    padding: 2em;
+
+    /*  */
+    div{
+        border: 1px solid #fff;
+        margin: 1em;
+        padding: 1em;
+        border-radius: 2em;
+        box-shadow: 0 0  0.2em  rgb(53, 87, 53);
+
+    }
+}
+/* span x div */
+
+section + div{
+    background-color: darkturquoise;
+    width: 20em;
+}
+span{
+    background-color: darkturquoise;
+    width: 10em;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+

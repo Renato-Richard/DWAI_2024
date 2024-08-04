@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mensagem</title>
+    <style>
+    
+    div{
+        margin: 0 auto;
+        width: 70em;
+    }
+    
+    </style>
+</head>
+<body>
+
+    <p><br><br><br></p> 
+    <!-- erro de semantica! -->
+
+    <form action="dadosenviados.html">
+        <label for="email">E-mail: 
+            <input type="email" id="email" />
+        </label><br>
+        <label for="assunto">Assunto:
+            <input type="text" id="assunto" value="Dúvida" >
+        </label><br>
+        <label for="anexo">Anexo:
+            <input type="file" id="anexo">
+        </label><br>
+        <textarea name="mensagem" maxlength="500" id="" cols="30" rows="10">Escreva sua mensagem</textarea><br>
+        <input type="submit" value="Enviar">
+        
+
+    </form>
+    
+</body>
+</html>
