@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: grid;
+    gap: 1em;
+    grid-template-rows: 10em 10em 10em;
+    grid-template-areas:
+    "nav a b c"
+    "nav d d c"
+    "nav e e c";
+}
+div, nav{
+    background-color: black;
+    color: white;
+}
+#areaNav{
+    grid-area: nav;
+}
+#areaA{
+    grid-area: a;
+}
+#areaB{
+    grid-area: b;
+}
+#areaC{
+    grid-area: c;
+}
+#areaD{
+    grid-area: d;
+}
+#areaE{
+    grid-area: e;
+}

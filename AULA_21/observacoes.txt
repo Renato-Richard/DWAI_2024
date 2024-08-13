@@ -1,0 +1,11 @@
+linear-gradient(to left,#7292A6, #224459 )
+background-color:#224459;
+background-color: #2980B9;
+font-family: 'Roboto Mono', monospace;
+
+Largura fluída
+main e nav
+ler mais - a
+img - background-image
+rgba nas imagens
+rowlspan na tabela
