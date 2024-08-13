@@ -1,0 +1,26 @@
+main img{
+    background-color:#e62429;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0 black;
+    vertical-align: middle;
+}
+main figure{
+    border: 5px solid black;
+    border-radius: 16px;
+}
+main h3{
+    font-size: 4em;
+}
+main p{
+    font-size: 1.25em;
+}
+main div div{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 4em 0;
+}
+main div div.par{
+    flex-direction: row-reverse;
+}

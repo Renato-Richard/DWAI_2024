@@ -5,6 +5,7 @@
     text-decoration: none;
 }
 body{
+    background-color: black;
     color: white;
     font-family: 'Trebuchet MS';
 }
@@ -15,46 +16,54 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-header nav ol li{
-    display: inline-block;
-    padding: 0 1em;
+h1{
+    width: 150px;
 }
-input{
+a{
+    color: white;
+}
+header nav ol, footer nav ul{
+    width: 700px;
+}
+header nav ol li, footer nav ul li{
+    width: 100px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-align: center;
+}
+header nav ol li:hover, footer nav ul li:hover{
+    border-bottom: 0.25em solid #e62429;
+}
+form{
+    width: 250px;
+    text-align: right;
+}
+input[type="search"]{
+    width: 200px;
     background: transparent;
-    border: 1px solid white;
-    border-radius: 1em;
-    padding: 1em;
+    border: none;
+    border-bottom: 1px solid white;
+    padding: 1em 0;
     vertical-align: middle;
+    color: white;
+}
+footer nav ol{
+    width: 250px;
+    text-align: right;
+}
+input:focus{
+    outline: none;
+}
+input[type="image"]{
+    border: none;
 }
 main{
     padding: 3em;
     max-width: 80em;
     margin: 0 auto;
-    color: black;
-    background-color: #eee;
-    text-align: center;
-}
-div div{
-    border: 1px solid black;
-    background-color: white;
-    padding: 2em;
-    width: 21em;
-}
-div.cards{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 2em;
-}
-a{
-    color: black;
-}
-main nav ol{
-    max-width: 80em;
-    padding: 3em;
-    display: flex;
-    justify-content: space-between;
+    color: white;
+    background-color: #111;
+    border-radius: 10px;
 }
 footer{
     padding: 2.5em 5em;
@@ -64,9 +73,9 @@ footer{
     align-items: center;
 }
 footer h2 img{
-    width: 100px;
+    width: 150px;
 }
 footer nav ol li{
     display: inline-block;
-    padding: 0 1em;
+    padding: 0 0.5em;
 }

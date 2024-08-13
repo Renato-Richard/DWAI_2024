@@ -1,0 +1,17 @@
+main{
+    padding: 3em;
+    max-width: 80em;
+    margin: 0 auto;
+    color: white;
+    background-color: #111;
+    border-radius: 10px;
+}
+main h3{
+    font-size: 4em;
+}
+main p{
+    font-size: 1.25em;
+}
+main section{
+    padding: 4em 0;
+}

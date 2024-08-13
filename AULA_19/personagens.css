@@ -1,0 +1,23 @@
+main{
+    padding: 3em;
+    max-width: 80em;
+    margin: 0 auto;
+    color: white;
+    background-color: #111;
+    border-radius: 10px;
+}
+main h3{
+    font-size: 4em;
+}
+main p{
+    font-size: 1.25em;
+}
+main div div{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 4em 0;
+}
+main div div.par{
+    flex-direction: row-reverse;
+}
