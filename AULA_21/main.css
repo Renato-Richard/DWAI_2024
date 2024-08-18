@@ -1,15 +1,159 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
     font-family: monospace;
-    font-size: 1.25em;
 }
 header{
     background-image: linear-gradient(to left, #7292A6, #224459);
     color: white;
-    padding: 2em;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    height: 8em;
+    padding: 0 2em;
 }
 main{
     display: grid;
-    grid-template-rows: 10em 10em 10em;
+    gap: 2em;
+    grid-template-rows: 20em 20em 20em;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    grid-template-areas:
+    "menuLateral informativos programacao programacao amanda"
+    "menuLateral lista inscricao natalia henrique"
+    "menuLateral larissa inscricao organizacao organizacao";
+    margin: 1em 0;
+}
+section, div, form{
+    font-family:'Trebuchet MS';
+}
+h2{
+    font-size: 2em;
+    margin: 0 0 1.25em 0;
+}
+main p, ul li, td, label{
+    font-size: 1.25em;
+}
+#menuLateral{
+    grid-area: menuLateral;
+    background-color: rgba(114, 146, 166, 0.5);
+    font-size: 3em;
+    padding: 0.25em;
+}
+#menuLateral a{
+    color: #2980B9;
+}
+#menuLateral ol li{
+    list-style: none;
+    padding: 0.75em;
+}
+#informativos{
+    grid-area: informativos;
+    padding: 1.25em;
+}
+#informativos p{
+    line-height: 2em;
+}
+#informativos a{
+    border: 2px solid #224459;
+    color: #224459;
+    padding: 0.25em;
+    display: inline-block;
+    margin: 0.5em 0 0 0;
+}
+#informativos span{
+    color:#2980B9;
+    font-weight: 900;
+}
+#programacao{
+    grid-area: programacao;
+    padding: 1.25em;
+}
+#programacao td{
+    padding: 0.15em 4em;
+}
+#amanda{
+    grid-area: amanda;
+    background-image: url(./palestrantes/amanda.jpg);
+}
+#lista{
+    grid-area: lista;
+    padding: 1.25em 1.25em 1.25em 2.25em;
+}
+#lista li{
+    padding: 0.5em;
+}
+#inscricao{
+    grid-area: inscricao;
+    padding: 1.25em;
+}
+#inscricao input{
+    width: 100%;
+    height: 4em;
+    padding: 1em;
+    margin: 1em 0;
+    border: 3px solid #224459;
+    font-size: 1em;
+}
+#inscricao input[type="checkbox"]{
+    width: 1em;
+    height: 1em;
+}
+#inscricao input[type="submit"]{
+    display: block;
+    width: 20em;
+    margin: 1em auto;
+    border: none;
+    background-color: #224459;
+    color: white;
+}
+#natalia{
+    grid-area: natalia;
+    background-image: url(./palestrantes/georgia.jpg);
+}
+#henrique{
+    grid-area: henrique;
+    background-image: url(./palestrantes/henrique.jpg);
+}
+#larissa{
+    grid-area: larissa;
+    background-image: url('./palestrantes/ellen.jpg');
+}
+#organizacao{
+    grid-area: organizacao;
+    padding: 1.25em;
+}
+#organizacao ul{
+    padding: 0 0 0 1.5em;
+}
+#organizacao li{
+    padding: 0.5em 0;
+}
+#amanda, #natalia, #henrique, #larissa{
+    background-size: cover;
+    filter: grayscale(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#amanda p, #natalia p, #henrique p, #larissa p{
+    background-color: rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 100%;
+    padding: 1em 0;
+    color: white;
+}
+footer{
+    background-color: #224459;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    font-size: 1.25em;
+    height: 10em;
+    text-align: center;
 }
