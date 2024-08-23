@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OBR</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>OBR - Olímpiada Brasileira de Robótica</h1>
+            <nav>
+                <ol>
+                    <li>lorem</li>
+                    <li>lorem</li>
+                    <li>lorem</li>
+                    <li>lorem</li>
+                    <li>lorem</li>
+                </ol>
+            </nav>
+            <button><img src="menu.png" alt="menu"></button>
+        </div>
+        <p>24 e 25 de agosto - turno manhã e tarde</p>
+    </header>
+    <!-- o picture trabalha responsividade nas imagens -->
+    <picture>
+        <source srcset="./responsividade/destaque-1000.png" media="(min-width: 1000px)">
+        <source srcset="./responsividade/destaque-800.png" media="(min-width: 800px)">
+        <!--  a menor imagem vai dentro de img e só pode ter uma tag de img dentro de picture -->
+        <img src="./responsividade/destaque-500.png" alt="foto de praia">
+    </picture>
+</body>
+</html>

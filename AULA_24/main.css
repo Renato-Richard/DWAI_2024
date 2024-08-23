@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: wheat;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+button{
+    display: none;
+}
+header{
+    padding: 2em;
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+}
+li{
+    display: inline-block;
+}
+p{
+    margin: 2em 0;
+}
+picture{
+    max-width: 70em;
+    margin: 0 auto;
+    text-align: center;
+}
+@media screen and (max-width: 1200px){
+    /* body{
+        background-color: aquamarine;
+    } */
+    nav{
+        display: block;
+    }
+}
+@media screen and (max-width: 800px){
+    /* body{
+        background-color: deepskyblue;
+    } */
+    /* p{
+        visibility: hidden;
+    } */
+}
+@media screen and (max-width: 500px){
+    /* body{
+        background-color: wheat;
+    } */
+    nav{
+        display: none;
+    }
+    button{
+        display: block;
+        background: transparent;
+        border: none;
+    }
+}
