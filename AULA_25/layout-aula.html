@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: monospace, "courier new";
+        }
+        header, footer{
+            padding: 2em;
+            background-color: black;
+            color: white;     
+            text-align: center;
+        }
+        h1{
+            margin-bottom: 3em;
+        }
+        nav{
+            max-width: 80em;
+            margin: 0 auto;
+        }
+        nav li a{
+            display: block;
+            padding: 1em 5em;
+            border: 1px solid #222;            
+            color: white ;
+            text-decoration: none;
+            font-size: 1.2em
+        }
+        
+        nav li a:hover{
+            background-color: white;
+            color: black
+        }
+        nav ol > li {
+            list-style-type: none;
+            display: inline-block;
+        }
+        section, nav ol{            
+            display: flex;
+            gap: 1em;
+            justify-content: space-between ;
+            flex-wrap: wrap;
+        }
+        section{
+            padding: 2em
+        }
+        section h2{
+            width: 100%;
+        }
+        section div{
+            width: 320px;
+            height: 250px;
+            box-shadow: 0 0 3px gray ;
+            padding: 2em;
+            border-radius: 7px;
+            background-color: white ;            
+        }
+        main{
+            background-color: #F5F5F5;
+            max-width: 80em;
+            margin: 0 auto;            
+        }
+        nav ol ul{
+            display: none;
+        }
+        nav li a{
+            animation-name: linkmenu;
+            animation-duration: 1.5s;
+            transition: color 1s, background-color 1s;
+            /* animation-iteration-count: infinite; */
+        }
+        nav li a:hover{
+            background-color: white;
+            color: black;
+        }
+        @keyframes linkmenu{
+            /* from{
+                background-color: rgb(71, 71, 71);
+            }
+            to{
+                background-color: black;
+            } */
+            0%{
+                background-color: red;
+            }
+            30%{
+                background-color: chartreuse;
+            }
+            50%{
+                background-color: deeppink;
+            }
+            100%{
+                background-color: black;
+            }
+        }
+    section div{
+        animation-name: cards;
+        animation-duration: 1.5s;
+        transition: box-shadow 1s background-color 1s;
+    }
+    section div:hover{
+        box-shadow: 0 0 3px rgb(0, 0, 0);
+        background-color: rgb(241, 241, 241);
+    }
+    @keyframes cards{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+    </style>
+</head>
+
+<body>
+<!--  MODAL -->
+
+
+    <header>
+        <h1>INFOWEB</h1>
+        <nav>
+            <ol>
+                <li><a href="#">link</a>
+                    <ul>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a>
+                    <ul>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a>
+                    <ul>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                        <li><a href="#">item</a></li>
+                    </ul>
+                </li>                
+            </ol>
+        </nav>
+    </header>
+    
+    <main>
+        
+
+        <section class="cards">
+            <h2>NOTÍCIAS</h2>
+            <div>Lorem ipsum dolor sit <a href="#">TOOLTIP</a>amet consectetur adipisicing elit. Provident a tenetur quod ab voluptas velit aut laboriosam repellat ullam corporis deserunt amet delectus eligendi aliquam quaerat sed, odio natus aperiam!</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident a tenetur quod ab voluptas velit aut laboriosam repellat ullam corporis deserunt amet delectus eligendi aliquam quaerat sed, odio natus aperiam!</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident a tenetur quod ab voluptas velit aut laboriosam repellat ullam corporis deserunt amet delectus eligendi aliquam quaerat sed, odio natus aperiam!</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident a tenetur quod ab voluptas velit aut laboriosam repellat ullam corporis deserunt amet delectus eligendi aliquam quaerat sed, odio natus aperiam!</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident a tenetur quod ab voluptas velit aut laboriosam repellat ullam corporis deserunt amet delectus eligendi aliquam quaerat sed, odio natus aperiam!</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident a tenetur quod ab voluptas velit aut laboriosam repellat ullam corporis deserunt amet delectus eligendi aliquam quaerat sed, odio natus aperiam!</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident a tenetur quod ab voluptas velit aut laboriosam repellat ullam corporis deserunt amet delectus eligendi aliquam quaerat sed, odio natus aperiam!</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident a tenetur quod ab voluptas velit aut laboriosam repellat ullam corporis deserunt amet delectus eligendi aliquam quaerat sed, odio natus aperiam!</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident a tenetur quod ab voluptas velit aut laboriosam repellat ullam corporis deserunt amet delectus eligendi aliquam quaerat sed, odio natus aperiam!</div>
+            
+        </section>
+        
+    </main>
+    <footer>
+        <p>Todos os direitos liberados.</p>
+    </footer>
+
+
+
+        
+        
+</body>
+</html>
