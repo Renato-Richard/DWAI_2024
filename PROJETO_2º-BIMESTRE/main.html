@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIBI</title>
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="especifico.css">
+    <link rel="stylesheet" href="header_footer.css">
+    <link rel="stylesheet" href="especifico_main.css">
 </head>
 <body>
     <header>
@@ -51,80 +51,85 @@
     <main>
         <p>A Biblioteca Central Sebastião Fernandes foi inaugurada em 25 de outubro de 1972.</p>
         <p>Seu nome é uma homenagem ao primeiro Diretor do Instituto, o Dr. Sebastião Fernandes de Oliveira.</p>
-        <section>
+        <section id="consulta">
             <h2>Consulta ao acervo bibliográfico</h2>
             <input type="search" id="pesquisa" placeholder="Pesquisar">
-            <input type="image"><br>
-            <a href="#">
-                <span>Título</span>
-                <span>Autor</span>
-            </a>
-            <a href="#">
-                <span>Título</span>
-                <span>Autor</span>
-            </a>
-            <a href="#">
-                <span>Título</span>
-                <span>Autor</span>
-            </a>
-            <a href="#"><img src="" alt="continuar"></a>
+            <input type="image" src="./imagens/lupa.png"><br>
         </section>
-        <section>
+        <section id="lendo_agora">
             <h2>Lendo agora:</h2>
             <div>
-                <img src="" alt="">
-                <h3>Meu Corpo Minha Casa</h3>
-                <p>de Rupi Kaur</p>
-                <h4>EMPRÉSTIMO</h4>
-                <p>10/6/2024</p>
-                <h4>VENCIMENTO</h4>
-                <p>24/6/2024</p>
-                <h4>RENOVAÇÕES</h4>
-                <p>0/2</p>
-                <button><img src="#" alt="#"></button>
+                <img src="./imagens/meu_corpo_minha_casa.png" alt="Livro: Meu Corpo Minha Casa de Rupi Kaur" id="imagem">
+                <div>
+                    <div class="titulo">
+                        <h3>Meu Corpo Minha Casa</h3>
+                        <p>de Rupi Kaur</p>
+                    </div>
+                    <div id="flex">
+                        <div>
+                            <h4>EMPRÉSTIMO</h4>
+                            <p>10/6/2024</p>
+                        </div>
+                        <div>
+                            <h4>VENCIMENTO</h4>
+                            <p>24/6/2024</p>
+                        </div>
+                        <div>
+                            <h4>RENOVAÇÕES</h4>
+                            <p>0/2</p>
+                        </div>
+                        <figure><img src="./imagens/renovacao.png" alt="renovações de empréstimos"></figure>
+                    </div>
+                </div>
             </div>
         </section>
-        <section>
+        <section id="os_mais_lidos">
             <h2>Os mais lidos:</h2>
             <div>
-                <img src="" alt="">
-                <h3>Meu Corpo Minha Casa</h3>
-                <p>de Rupi Kaur</p>
-                <button><img src="#" alt="#"></button>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3>Vermelho, Branco, Sangue Azul</h3>
-                <p>de Casey McQuiston</p>
-                <button><img src="#" alt="#"></button>
+                <div>
+                    <img src="./imagens/meu_corpo_minha_casa.png" alt="Livro: Meu Corpo Minha Casa de Rupi Kaur">
+                    <div class="titulo">
+                        <h3>Meu Corpo Minha Casa</h3>
+                        <p>de Rupi Kaur</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="./imagens/vermelho_branco_e_sangue_azul.png" alt="Livro: Vermelho, Branco e Sangue Azul de Casey McQuiston">
+                    <div class="titulo">
+                        <h3>Vermelho, Branco, Sangue Azul</h3>
+                        <p>de Casey McQuiston</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
     <footer>
         <div>
-            <h2>ENTRE EM CONTATO COM A BIBLIOTECA CENTRAL!</h2>
-            <p>Tire dúvidas, dê sua opinião, faça críticas e sugestões</p>
-            <form action="#">
-                <input type="text" id="nome" placeholder="Nome"><br>
-                <input type="email" id="e-mail" placeholder="E-mail"><br>
-                <input type="text" id="assunto" placeholder="Assunto"><br>
-                <textarea name="mensenger" id="mensagem" placeholder="Mensagem"></textarea>
-                <input type="submit" id="enviar" value="ENVIAR MENSAGEM">
-            </form>
+            <div>
+                <h2>ENTRE EM CONTATO COM A BIBLIOTECA CENTRAL!</h2>
+                <p>Tire dúvidas, dê sua opinião, faça críticas e sugestões</p>
+                <form action="#">
+                    <input type="text" id="nome" placeholder="Nome"><br>
+                    <input type="email" id="e-mail" placeholder="E-mail"><br>
+                    <input type="text" id="assunto" placeholder="Assunto"><br>
+                    <textarea name="mensenger" id="mensagem" placeholder="Mensagem"></textarea>
+                    <input type="submit" id="enviar" value="ENVIAR MENSAGEM">
+                </form>
+            </div>
+            <div class="logos">
+                <figure><img src="./imagens/logoIFRN.png" alt="Logo IFRN Campus Natal-Central"></figure>
+                <figure><img src="./imagens/logoOriginal_menor.png" alt="Logo do SIBI"></figure>
+            </div>
+            <div>
+                <p><b>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte</b><br><b>Sistema Integrado de Bibliotecas do IFRN</b></p>
+                <p><b>Biblioteca Central Sebastião Fernandes - Campus Natal-Central</b></p>
+                <address>Avenida Senador Salgado Filho, 1559, Tirol, Natal/RN | CEP: 59015-300</address>
+                <p>Telefone: (84) 40059866<br>E-mail: <a href="siabi.cnat@ifrn.edu.br">siabi.cnat@ifrn.edu.br</a><br>Horário de funcionamento: para empréstimos e devoluções: das 7h1min às 21h45min<br>para uso de salão de leitura: das 7h às 22h</p>
+                <a href="https://facebook.com"><img src="./imagens/face.png" alt="facebook"></a>  
+                <a href="https://instagram.com"><img src="./imagens/insta.png" alt="instagram"></a>  
+            </div>
         </div>
-        <div>
-            <figure><img src="./imagens/logoIFRN.png" alt="Logo IFRN Campus Natal-Central"></figure>
-            <figure><img src="./imagens/logoOriginal_menor.png" alt="Logo do SIBI"></figure>
-        </div>
-        <div>
-            <p>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte<br>Sistema Integrado de Bibliotecas do IFRN</p>
-            <p>Biblioteca Central Sebastião Fernandes - Campus Natal-Central</p>
-            <address>Avenida Senador Salgado Filho, 1559, Tirol, Natal/RN | CEP: 59015-300</address>
-            <p>Telefone: (84) 40059866<br>E-mail: <a href="siabi.cnat@ifrn.edu.br">siabi.cnat@ifrn.edu.br</a><br>Horário de funcionamento: para empréstimos e devoluções: das 7h1min às 21h45min<br>para uso de salão de leitura: das 7h às 22h</p>
-            <a href="https://facebook.com"><img src="#" alt="facebook"></a>  
-            <a href="https://instagram.com"><img src="#" alt="instagram"></a>  
-        </div>
-        <p>Desenvolvido por Renato Richard | Copyright © 2024</p>
+        <p>Desenvolvido por Renato Richard | Copyright © 2024</p>   
     </footer>
 </body>
 </html>

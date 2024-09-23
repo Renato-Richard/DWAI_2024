@@ -31,6 +31,9 @@ p#rolante{
 header{
     font-family: "open sans";
 }
+header a{
+    color: #C8191E;
+}
 header > div{
     display: flex;
     justify-content: space-between;
@@ -38,18 +41,80 @@ header > div{
     text-align: right;
     padding: 4em;
 }
-ol{
+header ol{
     display: flex;
     align-items: center;
 }
-li{
+header ol li{
     display: inline-block;
     padding: 0 1em;
     font-weight: 900;
 }
-select{
+header select{
     margin: 0 1.5em;
     padding: 1em;
     border-radius: 8px;
     background-color: rgba(47, 158, 65, 0.25);
+}
+footer{
+    font-family: "open sans";
+    background-color: #033903;
+    border-radius: 64px 64px 0 0;
+    color: white;
+    height: 466px;
+    padding: 4em;
+}
+footer h2, footer p{
+    width: 400px;
+}
+footer > div{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2em;
+}
+footer div.logos{
+    background-color: white;
+    padding: 1em;
+    border-radius: 16px;
+}
+footer div.logos figure img{
+    padding: 1em 0;
+}
+footer > p{
+    margin: 0 auto;
+    opacity: 50%;
+}
+footer form{
+    width: 16px;
+}
+footer input{
+    border-radius: 5px;
+    width: 400px;
+    height: 32px;
+    padding: 1em 0 1em 1em;
+    margin: 0.25em 0;
+    font-size: 1em;
+}
+footer input[type="submit"]{
+    padding: 0;
+    border-radius: 50px;
+    background-color: #7DB321;
+    font-weight: 700;
+    font-size: 1.25em;
+}
+footer textarea{
+    width: 400px;
+    height: 32px;
+    padding: 0.25em 0 0.25em 1em;
+    font-size: 1em;
+    border-radius: 5px;
+    margin: 0.25em 0;
+    font-family: "open sans";
+}
+footer div a{
+    padding-right: 0.5em;
+    color: white;
+}
+footer div p{
+    padding: 0.5em 0;
 }

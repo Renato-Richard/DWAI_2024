@@ -1,0 +1,112 @@
+@media screen and (max-width: 360px){
+    div#container{
+        background-image: url(./imagens/bgSuperior.png),  url(./imagens/bgCentral.png), url(./imagens/bgInferior.png);
+        background-repeat: no-repeat;
+        background-position: top, center, bottom;
+        background-size: contain, contain, contain;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4em;
+    }
+    a#entrar{
+        background-color: #077307;
+        opacity: 50%;
+        padding: 0.5em 1.5em;
+        border: 1px solid #F5DEB3;
+        border-radius: 50px;
+        font-family: "Open Sans";
+        font-weight: 100;
+        font-size: 1.5em;
+        color: #F5DEB3;
+    }
+    main{
+        margin: 0em 4em;
+    }
+    h2{
+        font-family: "pinyon script";
+        opacity: 50%;
+        font-size: 6em;
+        font-weight: 100;
+        height: 250px;
+        color: #F5DEB3;
+    }
+    main > p{
+        font-size: 3em;
+        background: linear-gradient(to bottom, #7DB321 60%, black);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    main > div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 16em;
+    }
+    section{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 14em;
+    }
+    h3{
+        font-size: 4em;
+        width: 100vw;
+        opacity: 1;
+    }
+    li{
+        font-size: 0.75em;
+        text-align: center;
+        width: 100vw;
+        opacity: 100%;
+    }
+    form{
+        font-family: "Open Sans";
+        border: 1px solid rgba(245, 222, 179, 0.25);
+        border-radius: 16px;
+        background-color: rgba(0, 0, 0, 0.32);
+        width: 33em;
+        height: 43em;
+        padding: 2em 0;
+        opacity: 0.1;
+        transition: 0.5s;
+    }
+    form > p{
+        font-size: 2em;
+        color: white;
+        font-weight: 100;
+        padding: 0.5em 2em;
+        text-align: left;
+    }
+    select{
+        color: black;
+        width: 400px;
+        height: 64px;
+        padding: 1em 0 1em 1em;
+        border-radius: 5px;
+        margin-bottom: 0.5em;
+        font-size: 1em;
+    }
+    option{
+        color: black;
+        background-color: #F5DEB3;
+    }
+    input{
+        border-radius: 5px;
+        width: 400px;
+        height: 64px;
+        padding: 1.25em 0 1.25em 1.25em;
+        margin: 0.5em 0;
+        font-size: 1em;
+    }
+    input[type="submit"]{
+        padding: 0;
+        border-radius: 50px;
+        background-color: #7DB321;
+        font-weight: 700;
+        font-size: 1.25em;
+    }
+}
