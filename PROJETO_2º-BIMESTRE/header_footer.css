@@ -31,8 +31,11 @@ p#rolante{
 header{
     font-family: "open sans";
 }
-header a{
+header p a{
     color: #C8191E;
+}
+header nav li a{
+    color: #000;
 }
 header > div{
     display: flex;
