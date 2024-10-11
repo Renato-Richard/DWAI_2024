@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS';
+    border: none;
+}
+main{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: white;
+}
+form{
+    background-color: green;
+    padding: 2em;
+    width: 40em;
+    height: 40em;
+    text-align: center;
+    border-radius: 20px;
+}
+input{
+    width: 400px;
+    height: 2.5em;
+    padding: 1em 0 1em 1em;
+    border-radius: 5px;
+    margin: 1.25em 0;
+}
+p{
+    padding-bottom: 2em
+}
+select{
+    width: 400px;
+    margin: 1.25em 0 0 0;
+    border-radius: 5px;
+    padding: 1em 0 1em 0.75em;
+}
+textarea{
+    width: 30em;
+    margin: 2.5em 0;
+    padding: 1em 0 0 1em;
+    border-radius: 5px;
+}
