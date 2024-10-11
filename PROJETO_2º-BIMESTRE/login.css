@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+body{
+    background-color: black;
+    font-family: "Open Sans";
+}
+main{
+    background-image: url(./imagens/bgInferior.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+input{
+    border-radius: 5px;
+    width: 400px;
+    height: 64px;
+    padding: 1.25em 0 1.25em 1.25em;
+    margin: 0.5em 0;
+    font-size: 1em;
+}
+input[type="submit"]{
+    padding: 0;
+    border-radius: 50px;
+    background-color: #7DB321;
+    font-weight: 700;
+    font-size: 1.25em;
+}
+span{
+    color: white;
+    font-weight: 400;
+}
+a{
+    color: #7DB321;
+    text-decoration: none;
+    font-weight: 900;
+}
+form > a{
+    color: white;
+    font-weight: 400;
+    font-size: 0.75em;
+}
