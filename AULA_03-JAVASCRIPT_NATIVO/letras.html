@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Letras</title>
+    <style>
+        body{
+            text-align: center;
+            height: 98vh;
+            font-size: 2em;
+        }
+        div#cont{
+            font-size: 20em;
+        }
+    </style>
+</head>
+<body>
+    <div id="cont"></div>
+    <div id="hist"></div>
+    <script>
+        let d = document;
+        d.body.onkeydown = function(e){
+            if(e.keyCode == 32){
+                d.querySelector("#cont").innerHTML = "space";
+                return false;
+            }
+            else {
+                d.querySelector("#cont").innerHTML = String.fromCharCode(e.keyCode);
+                d.querySelector("#hist").innerHTML = d.querySelector("#hist").textContent + String.fromCharCode(e.keyCode);
+                // String.fromCharCode: converte o código em letra do alfabeto
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>

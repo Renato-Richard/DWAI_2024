@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CONFIRMAR SENHA</title>
+</head>
+<body>
+    <label>
+        Senha:
+        <input type="password" id="senha">
+    </label><br>
+    <label>
+        Confirma senha:
+        <input type="password" id="conf-senha">
+    </label><br>
+    <button id="verificar">VERIFICAR</button>
+    <script>
+        let a = document.querySelector("input#senha");
+        let b = document.querySelector("input#conf-senha");
+        let verificar = document.querySelector("button#verificar");
+        verificar.onclick = function(){
+            if(a.value == b.value){
+                console.log("IGUAIS");
+                a.style.border = "2px solid green";
+                b.style.border = "2px solid green"
+            }else{
+                a.style.border = "2px solid red"
+                b.style.border = "2px solid red"
+            }
+        }
+    </script>
+</body>
+</html>
