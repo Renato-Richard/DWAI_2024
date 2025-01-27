@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="js"></p>
+    <p class="destaque"></p>
+    <script>
+        document.getElementById('js').innerHTML = "AULA 2";
+        document.getElementsByClassName('destaque')[0].innerHTML = "INFOWEB";
+
+        let x = 10;
+        var y = 20; /* NÃO É MAIS USADO */
+        const z = 87;  /* não pode alterar o valor */
+        console.log(z);
+        let a = 10;
+        let b = 20;
+        let c = a+b;
+        console.log(c);
+        let pi = 3.14;
+        let nome = 'INFOWEB';
+        let cores = ['blue','red','green'];
+        console.log(cores[1]);
+
+        let s = somar(10,30);
+
+        function somar(a,b){
+            return a+b;
+        }
+        console.log(s);
+        console.log(somar(54,87));
+
+        function bg(cor){
+            document.bgColor = cor;
+        }
+        console.log(Math.random()*256);
+        function coresrandomicas(){
+            
+            for(cont =1; cont <=50 ; cont++){
+                let r = Math.floor(Math.random()*256);
+                let g = Math.floor(Math.random()*256);
+                let b = Math.floor(Math.random()*256);
+
+                //document.write("<div style='background-color: rgb("+r+","+g+","+b+")'>x</div>");
+                document.write(`<div style='background-color: rgb(${r},${g},${b})'>x</div>`);
+            }
+        }
+        coresrandomicas();
+    </script>
+
+    <button onclick="bg('#ff0000')" >VERMELHO</button>
+    <button onclick="bg('#00FF00')" >VERDE</button>
+    <button onclick="bg('#0000FF')" >AZUL</button>
+</body>
+</html>
