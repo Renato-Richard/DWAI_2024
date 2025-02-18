@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    padding: 2em;
+    display: flex;
+}
+main div:nth-child(1){
+    background-image: url(video.mp4);
+}
