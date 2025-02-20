@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RECORDAÇÃO</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <button><img src="menu.svg" alt="menu"></button>
-        <h1><a href="index.html"><img src="logo horizontal.svg" alt="logo"></a></h1>
+        <div class="video-background">
+            <video autoplay muted loop id="background-video">
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div>
+            <button><img src="menu.svg" alt="menu"></button>
+            <h1><a href="index.html"><img src="logo horizontal.svg" alt="logo"></a></h1>
+        </div>
         <a href="login.html">ENTRAR</a>
     </header>
     <main>
