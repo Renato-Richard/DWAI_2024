@@ -6,6 +6,9 @@
     font-family: "Inter", sans-serif;
     list-style-type: none;
 }
+body nav ol li a{
+    font-size: 2em;
+}
 header{
     padding: 2em 16em;
     display: flex;
