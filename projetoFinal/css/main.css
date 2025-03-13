@@ -6,22 +6,31 @@
     font-family: "Inter", sans-serif;
     list-style-type: none;
 }
+div#container{
+    margin: 8em auto;
+    width: 48em;
+}
 html body{
     background-color: #f2f2f2;
+    height: 100%;
 }
 body nav ol li a{
     font-size: 2em;
 }
 header{
-    padding: 2em 16em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f2f2f2;
     position: fixed;
     top: 0;
+    left: 0;
+    z-index: 2;
     width: 100vw;
-    z-index: 1;
+}
+header, footer{
+    padding: 2em 16em;
+    color: #f2f2f2;
 }
 header div{
     display: flex;
@@ -55,8 +64,9 @@ video{
 }
 footer{
     background-color: #0d0d0d;
-    padding: 2em 16em;
-    color: #f2f2f2;
+    position: absolute;
+    width: 100%;
+    left: 0;
 }
 footer div.socialmedia{
     display: flex;

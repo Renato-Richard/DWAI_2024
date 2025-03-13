@@ -1,0 +1,55 @@
+main > div#controledomapa{
+    position: fixed;
+    bottom: 2em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 402;
+}
+.hidden{
+    display: none;
+}
+main > div {
+    position: relative; /* Define um contexto para posicionamento */
+    display: inline-block;
+    width: 100%;
+    max-width: 300px; /* Ajuste conforme necessário */
+}
+main > div {
+    position: relative; /* Define um contexto para o posicionamento */
+    display: inline-block;
+    width: 100%;
+    max-width: 100%; /* Ajusta para 100% para ocupar toda a largura do contêiner */
+}
+
+main > div > input[type="search"] {
+    background-color: #73212F;
+    padding: 1.5em;
+    position: absolute;
+    top: 236px; /* Alinha verticalmente ao centro */
+    left: 50%; /* Alinha horizontalmente ao centro */
+    transform: translate(-50%, -50%); /* Centraliza o campo */
+    z-index: 400;
+    border-radius: 0.5em;
+    width: 32em; /* Ajuste a largura conforme necessário */
+    border: none;
+    color: #f2f2f2;
+}
+
+main > div > input[type="search"]:active, main > div > input[type="search"]:focus {
+    outline: none;
+}
+
+main > div > input[type="search"]::placeholder {
+    color: #f2f2f2;
+}
+
+main > div > input[type="image"] {
+    position: absolute;
+    top: 50%; /* Alinha verticalmente ao centro do input de pesquisa */
+    right: 10px; /* Ajusta para ficar à direita do campo de pesquisa */
+    transform: translateY(-50%); /* Centraliza o ícone verticalmente */
+    z-index: 500; /* Garante que o ícone esteja acima do campo de pesquisa */
+    width: 20px; /* Ajuste o tamanho conforme necessário */
+    height: 20px;
+    cursor: pointer;
+}

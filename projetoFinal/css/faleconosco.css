@@ -1,0 +1,31 @@
+main{
+    margin-top: 300px;
+}
+main h2{
+    font-size: 2em;
+    color: #73212F;
+    font-weight: bolder;
+    margin-bottom: 2em;
+}
+main form input{
+    width: 28em;
+}
+main form label{
+    padding: 2em 0;
+}
+main > p{
+    text-align: center;
+    font-size: 2em;
+    margin: 4em 4em;
+    color: #0d0d0d;
+}
+main > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4em 0;
+}
+main div > div > p{
+    font-size: 1.5em;
+    margin: 0 16em 0 0;
+}
