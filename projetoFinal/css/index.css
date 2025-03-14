@@ -1,146 +1,137 @@
-main div.cta{
-    position: absolute;
+main{
+    margin-top: 300px;
+}
+main > p{
     text-align: center;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 32px;
+    font-size: 2em;
+    margin: 0 2em;
+    color: #f2f2f2;
+    background-color: rgba(13, 13, 13, 0.85);
+    border-radius: 16px;
+    padding: 1.25em;
+}
+main > a{
+    padding: 0.75em;
+    font-size: 1.5em;
+    background-color: #73212F;
+    border-radius: 16px;
+    color: #f2f2f2;
+    margin: 2em auto;
+    width: 10em;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 2em;
-    color: #f2f2f2;
-    background-color: rgba(13, 13, 13, 0.95);
-    padding: 2em 8em;
-    border-radius: 16px;
+    font-weight: 350;
 }
-main div.cta p{
-    font-size: 2.5em;
-    font-weight: 200;
+main div#content{
+    margin: 40em 0 8em 0;
 }
-main div.cta a{
-    background-color: #73212F;
-    color: #f2f2f2;
-    padding: 0.75em;
-    border-radius: 8px;
-    font-size: 1.5em;
-    font-weight: bolder;
-}
-main div.cta a:hover{
-    background-color: #963041;
-    transition: 0.5s;
-}
-main div.prevencaoaosuicidio{
+main div#content > div{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 8em;
 }
-main section h2{
-    font-size: 2.5em;
+div#prevencaoaosuicidio{
+    margin: 8em 0;
+}
+div#prevencaoaosuicidio > div > p{
+    margin-right: 12em;
+    font-size: 1.5em;
+    padding: 2em 0;
+    line-height: 2;
+}
+main h2{
+    font-size: 2em;
     color: #73212F;
-    font-weight: 200;
+    font-weight: 300;
 }
-main section h2 b, main section div div h3 b{
-    font-weight: 800;
-}
-main div.prevencaoaosuicidio section p{
-    font-size: 1.5em;
-    margin: 1em 4em 0 0;
-}
-main section.ondebuscarajuda{
-    margin-bottom: 8em;
-}
-main section.ondebuscarajuda div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1em 0 2em 0;
-}
-main section.ondebuscarajuda div div{
-    border: 2px solid #0d0d0d;
-    border-radius: 50px 50px 0 0;
-    flex-direction: column;
-    width: 20em;
-    height: 16em;
-}
-main section.ondebuscarajuda div div p{
-    background-color: #73212F;
-    width: 20em;
-    padding: 2em;
-    color: #f2f2f2;
-}
-main section.ondebuscarajuda > h3{
-    font-size: 1.5em;
+main h2 > span{
     font-weight: 900;
 }
-main section div div h3{
-    font-size: 1.5em;
+main section h2{
+    margin-bottom: 2em;
 }
-main section.ondebuscarajuda div div h3{
-    padding: 1.25em;
-    height: 116px;
-}
-main section.ondebuscarajuda > h3{
-    margin-top: 2em;
-}
-main section.ondebuscarajuda a{
-    font-weight: bolder;
-    color: #0d0d0d;
-}
-main div.vantagens{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 4em;
-    margin-bottom: 8em;
-}
-main div.vantagens div p{
-    width: 180px;
-    text-align: center;
-    font-size: 1.5em;
-}
-main section.ondebuscarajuda p{
-    margin: 0;
-}
-.carousel-item .cards{
-    display: flex;
-    justify-content: space-between;
-    color: #f2f2f2;
-}
-.impar{
-    background-color: #73212F;
-}
-.carousel-item .cards > div{
-    padding: 2em;
-    margin: 2em;
-    width: 512px;
-    height: 320px;
-    border-radius: 16px;
-}
-.carousel-item .cards div div{
+section#ondebuscarajuda > div{
     display: flex;
     align-items: center;
-    background-color: white;
-    padding: 1em;
-    color: #0d0d0d;
-    gap: 1em;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+section#ondebuscarajuda > div > div{
+    border: 1px solid #0d0d0d;
     border-radius: 16px;
-    margin: 0 0 1em 0;
+    width: 448px;
+    text-align: center;
+    padding-top: 1em;
 }
-.carousel-item .cards div div h3{
-    font-weight: bolder;
+section#ondebuscarajuda > div > div > div{
+    background-color: #73212F;
+    border-radius: 14px;
+    padding: 1em;
 }
-.par{
-    background-color: #0d0d0d;
+section#ondebuscarajuda > div > div > div p{
+    margin: 0;
+    text-align: left;
+    color: #f2f2f2;
 }
-section.depoimentodosnossosclientes{
-    margin-bottom: 8em;
+section#ondebuscarajuda > div:nth-child(3){
+    border: none;
+    text-align: left;
 }
-section.equipe{
-    margin-bottom: 8em;
+section#ondebuscarajuda > div:nth-child(3){
+    align-items: flex-end;
 }
-section.duvidasfrequentes{
-    margin-bottom: 8em;
+section#ondebuscarajuda a{
+    color: #0d0d0d
+}
+section#ondebuscarajuda > div:nth-child(3) > div{
+    border: none;
+    text-align: left;
+}
+main div:nth-child(3){
+    flex-wrap: wrap;
+}
+div#vantagens > div p{
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    font-size: 1.25em;
+    padding: 1em 0;
+}
+div.carousel-item.active{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 4em;
+}
+div.carousel-item > div{
+    background-color: #73212F;
+    padding: 2em;
+    width: 480px;
+    border-radius: 1em;
+    height: 360px;
+}
+div.carousel-item > div h3{
+    text-align: left;
+    width: 100%;
+    color: #f2f2f2;
+    padding: 1em 0;
+}
+div.carousel-item > div p{
+    text-align: left;
+    width: 100%;
+    color: #f2f2f2;
+}
+div.carousel-item > div > div{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+div.carousel-item.active.two > div{
+    background: transparent;
+}
+div.carousel-item.active.two > div p{
+    color: #0d0d0d;
+    width: 136px;
+    text-align: center;
+    padding: 1em 0;
 }

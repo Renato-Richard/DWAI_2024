@@ -69,23 +69,7 @@ function mapa(){
         .bindPopup('Natal')
         .openPopup();
 }
-function mapControl() {
-    let controlMap = document.getElementById("controledomapa");
-    let mapID = document.getElementById("map");
-    if (!mapID || !controlMap) return;
-    window.addEventListener("scroll", function () {
-        let mapaRect = mapID.getBoundingClientRect();
-        let mapHeight = mapaRect.height;
-        let hideThreshold = mapaRect.top + mapHeight * 0.15;
-        if (hideThreshold < 0) {
-            controlMap.classList.add("hidden");
-        } else {
-            controlMap.classList.remove("hidden");
-        }
-    });
-}
 document.addEventListener("DOMContentLoaded", function () {
     main();
     mapa();
-    mapControl();
 });
